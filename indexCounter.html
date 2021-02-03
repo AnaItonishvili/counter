@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 170px;
+            width: 800px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: rgb(93, 93, 187);
+            justify-content: space-around;
+
+        }
+
+        #number {
+            height: 50px;
+            width: 250px;
+            margin-top: 10px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: white;
+            order: 2;
+            border-radius: 5px;
+        }
+
+        #increment {
+
+            height: 30px;
+            width: 100px;
+            margin-top: 15px;
+            margin-left: 100px;
+            margin-right: 100px;
+            order: 1;
+        }
+
+        #decrement {
+
+            height: 30px;
+            width: 100px;
+            margin-top: 15px;
+            margin-left: 100px;
+            margin-right: 100px;
+            order: 3;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Counter Project</h1>
+    <div class="container">
+        <button id="increment" type="button">
+            +
+        </button>
+        <button id="number" type="button">
+            0
+        </button>
+        <button id="decrement" type="button">
+            -
+        </button>
+    </div>
+    <script src="./appCounter.js"></script>
+</body>
+
+</html>
